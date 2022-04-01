@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+*{
+  margin:0 ;
+  padding:0 ;
+  text-decoration:none;
+  font-family:Fredoka;
+}
+
+main{
+    background-image: url('https://i.pinimg.com/originals/f2/d2/1e/f2d21e3eabd1a79d69dc046d99ae9905.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#logo{
+    height:20vh;
+}
+
+header{
+    height:20vh;
+    width:100%;
+    text-align: center;
+    background-color: black;
+  }
+
+#subtitulo{
+  margin-top: 2rem;;
+  font-family: Fredoka;
+  color:#0a0a0a; 
+}
+
+#cards{
+    width:60%;
+}
+
+
+.card{  
+  padding:2rem;
+  margin-top:2rem;
+  height:25rem;
+  width:100%;
+  z-index:2;
+  color:rgb(252, 206, 2);
+  background-color:#05050590;
+  border:groove #CD7F32;
+  box-shadow: inset 0 0 1em #CD7F32;
+  background-image:url('https://img.myloview.com.br/adesivos/estrela-constelacao-vector-400-65617242.jpg');
+  position:relative;
+  transform-style:preserve-3d;
+  transition:all 0.3 ease;  
+}
+
+.card:hover{
+  transform:rotateY(180deg);
+}
+
+div #cardFront{
+position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  overflow:hidden;
+}
+
+div #cardBack{
+  font-size:20px;  
+  padding-top:10rem;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  overflow:hidden;
+  transform:rotateY(180deg);
+}
+
+#background{
+  position:fixed;
+  width:100%;
+  height:100vh;
+}
+
+footer{
+  background-color: black;
+  color:white;
+  width:100%;
+  margin-top:5rem;
+  text-align:start;
+}
+footer p{
+  padding-left:2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+

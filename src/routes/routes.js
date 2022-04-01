@@ -1,9 +1,13 @@
-import express from 'express';
-import { getIndex } from '../controller/PersonagemController.js'
+import express from 'express'
+import { getIndex, 
+    getDetalhes,
+    getDeletar,
 
-export const routes = express.Router();
+} from '../controller/PersonagemController.js'
 
+export const routes = express.Router()
 
-routes.get("/" , getIndex)
-
+routes.get('/', getIndex)
+routes.get('/detalhes/:id', getDetalhes)
+routes.get('/apagar/:id', getDeletar)
 

@@ -62,33 +62,23 @@
 
     </section>
 
-      <h1 id ='subtitulo'>Cavaleiros de Bronze</h1>
+      <h1 id ='subtitulo'>Lista de Cavaleiros</h1>
 
         <section id='cards'>
  
-            <% cavaleiros.forEach((personagem)=> { %>
+      <% cavaleiros.forEach((personagem)=> { %>
+        <a href="detalhes/<%= personagem.id %> ">
           <div id ='<%= personagem.id %>' class='card'>
             
             <div id='cardFront'>
                 <h2 class ='id'> <%= personagem.id %> </h2>
                 <h2 class ='nome'> <%= personagem.nome %> </h2>
-                <img src="<%= personagem.imagem %>" alt = 'cavaleiro'>
+                <img src="<%= personagem.imagem %>" alt = '<%= personagem.nome %>'>
                 
-                <h2 class = classificaçao ><%=personagem.classificaçao  %></h2>
-                <h2 class = armadura> Armadura: <%=personagem.armadura  %></h2>
-                <h2 class = cosntelaçao> Constelação: <%=personagem.constelaçao  %></h2>
-                <h2 class = divindade>Divindade: <%=personagem.divindade %></h2>
-                  
-                  <p class = aniversario >Aniversário: <%= personagem.aniversario %> </p>
-                  <p class = signo>Signo: <%= personagem.signo %></p>
-                  <p class = habilidade>Golpe Especial: <%= personagem.habilidade %></p>
-  </div>
-
-            <div id='cardBack'>
-              <h3 class = 'descriçao'>Descrição: <%= personagem.descriçao %></h3>
-            </div>  
-                                  
+               </div>
+              
           </div>
+        </a>
               
             <% }) %>
                        

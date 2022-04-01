@@ -138,45 +138,25 @@ section#cards{
   justify-content:space-evenly;  
 }
 
+#cards{
+  width:100%;
+}
+
+
 .card{  
-  padding:2rem;
-  margin-top:2rem;
-  height:25rem;
-  width: 50%;
-  z-index:2;
-  color:#fff;
-  background-color:#05050590;
-  border:groove #CD7F32;
-  box-shadow: inset 0 0 1em #CD7F32;
-  background-image:url('https://img.myloview.com.br/adesivos/estrela-constelacao-vector-400-65617242.jpg');
-  position:relative;
-  transform-style:preserve-3d;
-  transition:all 0.3 ease;  
-}
-
-.card:hover{
-  transform:rotateY(180deg);
-}
-
-div #cardFront{
-position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  backface-visibility:hidden;
-  overflow:hidden;
-}
-
-div #cardBack{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  backface-visibility:hidden;
-  overflow:hidden;
-  transform:rotateY(180deg);
+padding:2rem;
+margin-top:2rem;
+height:25rem;
+width:100%;
+z-index:2;
+color:#fff;
+background-color:#05050590;
+border:groove #CD7F32;
+box-shadow: inset 0 0 1em #CD7F32;
+background-image:url('https://img.myloview.com.br/adesivos/estrela-constelacao-vector-400-65617242.jpg');
+position:relative;
+transform-style:preserve-3d;
+transition:all 0.3 ease;  
 }
 
 #background{
