@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+*{
+  margin:0 ;
+  padding:0 ;
+  text-decoration:none;
+}
+  
+body{
+  display:flex;
+  font-family: Fredoka;
+}
+
+nav{
+  width:21%;
+  position: fixed;
+  height:100vh;
+  overflow-y: scroll;
+  background-image:url('https://img.myloview.com.br/adesivos/estrela-constelacao-vector-400-65617242.jpg');
+  color:white;
+  z-index:9999;
+}
+
+nav h1{
+  padding-left:1rem;
+  text-decoration:none;
+}
+
+nav h1 a{
+  color:gold;
+}
+
+main{
+  position:absolute;
+  left:20%;
+  text-align:center;  
+}
+
+#logo{
+  width: 30%;
+  margin-top:1rem;
+}
+
+#seiya{
+  display:block;
+  margin-left:30%;
+  width:50%;
+}
+
+ul{
+  margin-top:2rem;
+  padding:0 5px 5px 15px;
+}
+
+ul h2 a{
+  color:#f6f5faf5;
+  text-decoration:underline;
+}
+
+header{
+  font-family: Fredoka;
+  text-align: center;
+  background-color: black;
+  height:12rem; 
+  width:67rem;
+  margin-left:.5rem;
+}
+
+section{
+  width:100%;
+}
+
+#cadastro h2{
+  color: rgb(3, 3, 3);
+  padding-bottom: 3rem;
+  width:100%;
+}
+
+#cadastro h3{
+  color: rgb(3, 3, 3);
+  padding-bottom: 3rem;
+  width:100%;
+}
+h3 a{
+  color:red;
+}
+
+#cadastro{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+#cadastro form{
+  padding:5rem;  
+  width:50%;
+  border:groove #FFD700;
+  box-shadow: inset 0 0 1em #FFD700;
+  background-color:#00000099;  
+}
+
+label{
+  color:gold; 
+}
+
+#cadastro input{
+  width:100%;
+  margin-bottom:2rem;
+}
+
+button#cadastrar{
+    padding:1rem;
+    font-family: Fredoka;
+    font-size:1rem;
+    cursor:pointer;
+  transition:all .3s ease-in-out
+}
+
+button#cadastrar:hover{
+    padding:1rem;
+    font-family: Fredoka;
+    font-size:1rem;
+    background-color:gold;
+    color:black;
+  cursor:pointer;
+  transition:all .3s ease-in-out
+}
+
+#subtitulo{
+  margin-top: 2rem;;
+  font-family: Fredoka;
+  color:#0a0a0a; 
+}
+
+section#cards{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;  
+}
+
+.card{  
+  padding:2rem;
+  margin-top:2rem;
+  height:25rem;
+  width: 50%;
+  z-index:2;
+  color:#fff;
+  background-color:#05050590;
+  border:groove #CD7F32;
+  box-shadow: inset 0 0 1em #CD7F32;
+  background-image:url('https://img.myloview.com.br/adesivos/estrela-constelacao-vector-400-65617242.jpg');
+  position:relative;
+  transform-style:preserve-3d;
+  transition:all 0.3 ease;  
+}
+
+.card:hover{
+  transform:rotateY(180deg);
+}
+
+div #cardFront{
+position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  overflow:hidden;
+}
+
+div #cardBack{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  overflow:hidden;
+  transform:rotateY(180deg);
+}
+
+#background{
+  position:fixed;
+  width:100%;
+  height:100vh;
+}
+
+footer{
+  background-color: black;
+  color:white;
+  width:100%;
+  margin-top:5rem;
+  text-align:start;
+}
+footer p{
+  padding-left:2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+

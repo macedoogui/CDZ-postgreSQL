@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+    <title>Projeto 03 Módulo 2</title>
+</head>
+  
+<body>
+
+  <img id ='background' src='https://i.pinimg.com/originals/f2/d2/1e/f2d21e3eabd1a79d69dc046d99ae9905.jpg'>
+  
+  <nav>   
+    <img id= 'seiya' src="https://64.media.tumblr.com/6b6bd15d997ae12db217b739c2af692b/tumblr_mp67n0UnXA1rvobogo4_250.gifv" alt="gif seiya">
+
+    <h1><a href="#cadastro"> Cadastro de Cavaleiro</a></h1>
+    
+    <% cavaleiros.forEach((personagem) => { %>    
+    <ul>     
+    <h2>  <a href= "#<%= personagem.id %>"> <%= personagem.nome %> </a> </h2>            
+    </ul>
+    <%  })  %>
+  </nav>
+
+  <main>
+    <header>
+      <img id = 'logo' src='../img/logo cdz.png' alt='logo cdz'>       </header>
+
+    <section id ='cadastro'>
+     <h2>Cadastre um novo Cavaleiro</h2>
+      
+     <h3>Para mais informações de personagens,<a href="https://saintseiya.fandom.com/pt-br/wiki/Saint_Seiya_Wiki" target="_blank" > clique aqui.</a></h3>
+
+    <form action="/add" method='post'>
+      
+      <label for='nome'> Nome: </label>
+      <input type='text' id='nome' name='nome'>
+      <label for='imagem'> link da imagem: </label>
+      <input type='text' id='imagem' name='imagem'>
+      <label for='classificaçao'> Classificação: </label>
+      <input type='text' id='classificaçao' name='classificaçao'>
+      <label for='armadura'> Armadura: </label>
+      <input type='text' id='armadura' name='armadura'>
+      <label for='constelaçao'> Constelação: </label>
+      <input type='text' id='constelaçao' name='constelaçao'>
+      <label for='divindade'> Divindade: </label>
+      <input type='text' id='divindade' name='divindade'>
+      <label for='aniversario'> Aniversário: </label>
+      <input type='text' id='aniversario' name='aniversario'>
+      <label for='signo'> Signo: </label>
+      <input type='text' id='signo' name='signo'>
+      <label for='habilidade'> Habilidade: </label>
+      <input type='text' id='habilidade' name='habilidade'>
+      <label for='descriçao'> Descrição: </label>
+      <input type='text' id='descriçao' name='descriçao'>
+
+        <button id='cadastrar' type='submit'> Cadastrar </button>
+   
+    </form>
+
+    </section>
+
+      <h1 id ='subtitulo'>Cavaleiros de Bronze</h1>
+
+        <section id='cards'>
+ 
+            <% cavaleiros.forEach((personagem)=> { %>
+          <div id ='<%= personagem.id %>' class='card'>
+            
+            <div id='cardFront'>
+                <h2 class ='id'> <%= personagem.id %> </h2>
+                <h2 class ='nome'> <%= personagem.nome %> </h2>
+                <img src="<%= personagem.imagem %>" alt = 'cavaleiro'>
+                
+                <h2 class = classificaçao ><%=personagem.classificaçao  %></h2>
+                <h2 class = armadura> Armadura: <%=personagem.armadura  %></h2>
+                <h2 class = cosntelaçao> Constelação: <%=personagem.constelaçao  %></h2>
+                <h2 class = divindade>Divindade: <%=personagem.divindade %></h2>
+                  
+                  <p class = aniversario >Aniversário: <%= personagem.aniversario %> </p>
+                  <p class = signo>Signo: <%= personagem.signo %></p>
+                  <p class = habilidade>Golpe Especial: <%= personagem.habilidade %></p>
+  </div>
+
+            <div id='cardBack'>
+              <h3 class = 'descriçao'>Descrição: <%= personagem.descriçao %></h3>
+            </div>  
+                                  
+          </div>
+              
+            <% }) %>
+                       
+        </section>
+
+        <footer><p>Este é um projeto criado por Guilherme Macedo.</p></footer>
+
+  </main>
+
+</body>
+</html>
+
+
+      
+        
