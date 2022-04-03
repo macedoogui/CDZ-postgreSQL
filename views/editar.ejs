@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/editar.css">
+    <title>Projeto 03 Módulo 2</title>
+</head>
+  
+<body>
+  
+  <main>
+
+    <header>
+        <a href="/">
+        <img id = 'logo' src='../img/logo cdz.png' alt='logo cdz'>
+        </a>       
+    </header>
+
+    <section id ='cadastro'>
+     <h2>Editar</h2>
+      
+    <form action="/editar/<%= personagem.id %>" method='post'>
+      
+      <label for='nome'> Nome: </label>
+      <input type='text' id='nome' name='nome' value="<%=personagem.nome%>">
+      <label for='imagem'> link da imagem: </label>
+      <input type='text' id='imagem' name='imagem' value="<%=personagem.imagem%>">
+      <label for='classificaçao'> Classificação: </label>
+      <input type='text' id='classificaçao' name='classificaçao' value="<%=personagem.classificaçao%>">
+      <label for='armadura'> Armadura: </label>
+      <input type='text' id='armadura' name='armadura' value="<%=personagem.armadura%>">
+      <label for='constelaçao'> Constelação: </label>
+      <input type='text' id='constelaçao' name='constelaçao' value="<%=personagem.constelaçao%>">
+      <label for='divindade'> Divindade: </label>
+      <input type='text' id='divindade' name='divindade' value="<%=personagem.divindade%>">
+      <label for='aniversario'> Aniversário: </label>
+      <input type='text' id='aniversario' name='aniversario' value="<%=personagem.aniversario%>">
+      <label for='signo'> Signo: </label>
+      <input type='text' id='signo' name='signo' value="<%=personagem.signo%>">
+      <label for='habilidade'> Habilidade: </label>
+      <input type='text' id='habilidade' name='habilidade' value="<%=personagem.habilidade%>">
+      <label for='descriçao'> Descrição: </label>
+      <input type='text' id='descriçao' name='descriçao' value="<%=personagem.descriçao%>">
+
+        <button id='cadastrar' type='submit'> Editar </button>
+   
+    </form>
+
+    </section>
+
+        <footer><p>Este é um projeto criado por Guilherme Macedo.</p></footer>
+
+  </main>
+
+</body>
+</html>
+
+
+      
+        
