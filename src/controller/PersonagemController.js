@@ -1,4 +1,4 @@
-import { personagens } from "./../model/personagem.js";
+import { personagens } from "./../model/personagens.js";
 
 
 export const getIndex = async (req, res) => {
