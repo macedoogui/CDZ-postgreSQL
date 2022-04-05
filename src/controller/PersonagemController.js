@@ -1,4 +1,4 @@
-import { personagens } from "./../controller/PersonagemController.js";
+import { personagens } from "./../model/personagem.js";
 
 
 export const getIndex = async (req, res) => {
