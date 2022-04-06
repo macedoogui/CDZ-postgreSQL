@@ -60,7 +60,7 @@ export const personagens = connection.define(
 );
 
       const initTable = async () => {
-        await personagnes.sync();
+        await personagens.sync();
       };
 
       initTable();
