@@ -1,5 +1,6 @@
 import { personagens } from "../model/personagens.js";
 
+let aler= "";
 
 export const getIndex = async (req, res) => {
 
