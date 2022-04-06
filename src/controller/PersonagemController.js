@@ -113,11 +113,11 @@ export const postCriar = async (req, res) => {
     } = req.body;
 
 
-      if (!personagens.nome || !personagens.imagem || !personagens.classificaçao || !personagens.armadura || !personagens.constelaçao || !personagens.divindade || !personagens.aniversario || !personagens.signo|| !personagens.habilidade || !personagens.descriçao ){
+     /* if (!personagens.nome || !personagens.imagem || !personagens.classificaçao || !personagens.armadura || !personagens.constelaçao || !personagens.divindade || !personagens.aniversario || !personagens.signo|| !personagens.habilidade || !personagens.descriçao ){
  
         return res.redirect ('/');
 
-      }
+      }*/
     
     await personagens.create({
       nome,
@@ -131,9 +131,6 @@ export const postCriar = async (req, res) => {
       habilidade,
       descriçao,
     });
-
-    mensagem = "Criado com sucesso !!!";
-    type = "success";
 
     res.status(200).redirect("/");
   } catch (err) {
