@@ -1,6 +1,5 @@
 import { personagens } from "../model/personagens.js";
 
-let alert= "";
 
 export const getIndex = async (req, res) => {
 
@@ -116,7 +115,7 @@ export const postCriar = async (req, res) => {
     console.log(personagens);
       if (!personagens.nome || !personagens.imagem || !personagens.classificaçao || !personagens.armadura || !personagens.constelaçao || !personagens.divindade || !personagens.aniversario || !personagens.signo|| !personagens.habilidade || !personagens.descriçao ){
         
-        alert("Preencha todos os campos para concluir !")
+        mensagem:("Preencha todos os campos para concluir !")
  
         return res.redirect ('/');
 
