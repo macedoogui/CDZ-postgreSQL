@@ -112,12 +112,14 @@ export const postCriar = async (req, res) => {
       descriçao,
     } = req.body;
 
-
-     /* if (!personagens.nome || !personagens.imagem || !personagens.classificaçao || !personagens.armadura || !personagens.constelaçao || !personagens.divindade || !personagens.aniversario || !personagens.signo|| !personagens.habilidade || !personagens.descriçao ){
+    console.log(personagens);
+      if (!personagens.nome || !personagens.imagem || !personagens.classificaçao || !personagens.armadura || !personagens.constelaçao || !personagens.divindade || !personagens.aniversario || !personagens.signo|| !personagens.habilidade || !personagens.descriçao ){
+        
+        alert("Preencha todos os campos para concluir !")
  
         return res.redirect ('/');
 
-      }*/
+      }
     
     await personagens.create({
       nome,
