@@ -58,3 +58,9 @@ export const personagens = connection.define(
     timestamps: false,
   }
 );
+
+      const initTable = async () => {
+        await personagnes.sync();
+      };
+
+      initTable();
